@@ -5,3 +5,4 @@ ruff
 pytest
 python-dotenv
 langchain-openai
+streamlit==1.45.1
