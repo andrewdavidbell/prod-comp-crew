@@ -1,0 +1,20 @@
+research_task:
+  description: Gather product data from web sources
+  agent: researcher
+  expected_output: Raw product data with technical specifications
+  tools:
+    - ScrapeWebsiteTool
+    - SerperDevTool
+
+analysis_task:
+  description: Validate and structure product specifications
+  agent: analyst
+  expected_output: Verified technical specs table
+  context: research_task
+
+comparison_task:
+  description: Compare product features objectively
+  agent: comparison_agent
+  expected_output: Markdown report with comparison matrix
+  context: analysis_task
+  output_file: output/comparison.md

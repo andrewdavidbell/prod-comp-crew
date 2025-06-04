@@ -1,0 +1,7 @@
+crewai
+crewai-tools
+uv
+ruff
+pytest
+python-dotenv
+langchain-openai
